@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+
+    <!--ListView, tak ja tworzymy-->
+    <string-array name="obrazki">
+        <item>rysunek 1</item>
+        <item>rysunek 2</item>
+        <item>rysunek 3</item>
+        <item>rysunek 4</item>
+        <item>rysunek 5</item>
+        <item>rysunek 6</item>
+        <item>rysunek 7</item>
+        <item>rysunek 8</item>
+    </string-array>
+</resources>

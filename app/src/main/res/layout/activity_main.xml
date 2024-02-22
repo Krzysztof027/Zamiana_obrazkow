@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--na cala szerokossc-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grafika"
+        android:background="@color/teal_200"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        />
+    <!--Background wszędzie prócz przycisków Button-->
+
+    <!--Przycisk względem nadrzędnego, ajwyżej metoda prób i błędów-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gora1"
+        android:adjustViewBounds="true"/>
+    <!--
+    When using adjustViewBounds ,
+     you need to set either width or height of your ImageView to wrap_content and the other to a fixed value. Then when you set adjustViewBounds to true , Android adjusts your image
+     based on the fixed height or width value you've set and keeps aspect ratio.-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:layout_gravity="center"
+        android:text="Losuj"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_margin="16dp"
+        android:entries="@array/obrazki"
+        android:dividerHeight="2dp"
+        />
+    <!--ListView, tak ja tworzymy, strings.xml-->
+</LinearLayout>
